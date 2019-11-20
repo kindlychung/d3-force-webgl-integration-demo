@@ -1,4 +1,4 @@
-import render from '../src/index.js'
+import {render} from '../src/index.js'
 import data from './data.json'
 
 const defaultOptions = {
@@ -8,7 +8,7 @@ const defaultOptions = {
   container: document.body
 }
 
-render.pixi(defaultOptions)
+render.three(defaultOptions)
 
 const threeBtn = document.getElementById('three')
 const pixiBtn = document.getElementById('pixi')

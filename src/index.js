@@ -1,7 +1,9 @@
-import three from './three.js'
-import pixi from './pixi.js'
+import {threejsRenderer} from './threejsRenderer.js'
+import {pixiRenderer} from './pixiRenderer.js'
 
-export default {
-  three,
-  pixi
+const render = {
+  three: threejsRenderer,
+  pixi: pixiRenderer
 }
+
+export {render}

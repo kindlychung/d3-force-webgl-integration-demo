@@ -2,15 +2,15 @@ import * as d3 from 'd3'
 import * as PIXI from 'pixi.js'
 import { colour } from './utils.js'
 
-export default function ({
+export const pixiRenderer = ({
   data,
   width,
   height,
   container
-}) {
+}) => {
   const stage = new PIXI.Container()
   const renderer = PIXI.autoDetectRenderer(width, height, {
-    antialias: !0, transparent: !0, resolution: 1 })
+    antialias: true, transparent: true, resolution: 1 })
   const links = new PIXI.Graphics()
 
   stage.addChild(links)
